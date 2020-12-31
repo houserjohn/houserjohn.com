@@ -7,7 +7,7 @@ React, Redux, TypeScript, HTML, CSS, JS, Firebase, React Routing
 ## Personal Notes
 
 ### Installing NPM
-*May need to delete npm off of windows if using WSL*
+*May need to delete node off of windows if using WSL*
 ```
 sudo apt update
 sudo apt install nodejs
