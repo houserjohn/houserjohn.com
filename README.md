@@ -18,14 +18,18 @@ sudo apt install npm
 ### Creating a react app with typescript
 ```
 npx create-react-app my-app --template typescript
-cd my-app
-npm start
 ```
 
 ### Introducing redux into our app
 ```
 npm install --save redux @types/redux
 npm install --save react-redux @types/react-redux
+```
+
+### Displaying our react app
+```
+cd my-app
+npm start
 ```
 
 ### Deployment with Firebase 
