@@ -7,10 +7,11 @@ React, Redux, TypeScript, HTML, CSS, JS, Firebase, React Routing
 ## Personal Notes
 
 ### Installing NPM
-Just install node
+*May need to delete npm off of windows if using WSL*
 ```
 sudo apt update
 sudo apt install nodejs
+sudo apt install npm
 ```
 ### Deployment with Firebase 
 https://www.youtube.com/watch?v=IDHfvpsYShs&t=7s&ab_channel=AndyWang
