@@ -1,8 +1,10 @@
 # Code for houserjohn.com
 
 ## Technologies used
-React, Redux, TypeScript, HTML, CSS, JS, Firebase, React Routing
+React, Redux, TypeScript, HTML, CSS, JS, React Routing
 
+## Hosting used
+Firebase
 
 ## Personal Notes
 
@@ -13,13 +15,19 @@ sudo apt update
 sudo apt install nodejs
 sudo apt install npm
 ```
-### Deployment with Firebase 
-https://www.youtube.com/watch?v=IDHfvpsYShs&t=7s&ab_channel=AndyWang
-  
-### Creating a react app
+### Creating a react app with typescript
 ```
-npx create-react-app my-app
+npx create-react-app my-app --template typescript
 cd my-app
 npm start
 ```
 
+### Introducing redux into our app
+```
+npm install --save redux @types/redux
+npm install --save react-redux @types/react-redux
+```
+
+### Deployment with Firebase 
+https://www.youtube.com/watch?v=IDHfvpsYShs&t=7s&ab_channel=AndyWang
+  
