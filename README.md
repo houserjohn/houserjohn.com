@@ -5,6 +5,7 @@ Technologies used: React, Redux, TypeScript, HTML, CSS, JS, Firebase, React Rout
 
 
 *Personal Notes*
+
 Deployment with Firebase: 
   https://www.youtube.com/watch?v=IDHfvpsYShs&t=7s&ab_channel=AndyWang
 Creating a react app:
