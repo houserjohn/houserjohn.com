@@ -26,7 +26,7 @@ npm install --save redux @types/redux
 npm install --save react-redux @types/react-redux
 ```
 
-### Displaying our react app
+### Displaying our app
 ```
 cd my-app
 npm start
