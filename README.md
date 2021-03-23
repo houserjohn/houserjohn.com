@@ -6,7 +6,7 @@ React, Redux, TypeScript, HTML, CSS, JS, React Routing
 ## Hosting used
 Firebase
 
-## Personal Notes
+## Setup Tutorial
 For Windows users it is recommended to use Windows Subsystem for Linux with VSCode when following these instructions.  
 Errors I encountered during this project using WSL:
 * [The path variable may have errors when downloading and using NPM.](https://www.reddit.com/r/bashonubuntuonwindows/comments/het5vq/npm_not_working_since_ive_updated_to_wsl2/)  
