@@ -9,7 +9,9 @@ Firebase
 ## Personal Notes
 
 ### Installing NPM
-For Windows users it is recommended to use Windows Subsystem for Linux when following these instructions.
+
+For Windows users it is recommended to use Windows Subsystem for Linux with VSCode when following these instructions.
+
 *Will encounter errors if using WSL (considering changing path variable): https://www.reddit.com/r/bashonubuntuonwindows/comments/het5vq/npm_not_working_since_ive_updated_to_wsl2/*
 ```
 sudo apt update
