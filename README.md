@@ -29,6 +29,11 @@ npx create-react-app my-app --template typescript
 npm install --save redux @types/redux
 npm install --save react-redux @types/react-redux
 ```
+### Installing React Router
+```
+npm install --save @types/react-router
+```
+
 
 ### Displaying our app
 ```
