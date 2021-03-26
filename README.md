@@ -19,12 +19,12 @@ sudo apt update
 sudo apt install nodejs
 sudo apt install npm
 ```
-### Creating a react app with typescript
+### Creating a React app with Typescript
 ```
 npx create-react-app my-app --template typescript
 ```
 
-### Introducing redux into our app
+### Introducing Redux into our app
 ```
 npm install --save redux @types/redux
 npm install --save react-redux @types/react-redux
