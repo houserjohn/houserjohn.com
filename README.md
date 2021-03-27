@@ -23,6 +23,11 @@ sudo apt install npm
 ```
 npx create-react-app my-app --template typescript
 ```
+### Before Continuing, Change Directory
+In order to avoid problems, run the following command before the next steps:
+```
+cd my-app
+```
 
 ### Introducing Redux into our app
 ```
@@ -37,7 +42,6 @@ npm install --save @types/react-router
 
 ### Displaying our app
 ```
-cd my-app
 npm start
 ```
 
