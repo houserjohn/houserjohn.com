@@ -1,16 +1,18 @@
 # Code for houserjohn.com
 
 ## Technologies used
-React, Redux, TypeScript, HTML, CSS, JS, React Routing
+React, Redux, TypeScript, HTML, CSS, JS, React Routing, React Materialize
 
 ## Hosting used
 Firebase
 
 ## Setup Tutorial
 For Windows users it is recommended to use Windows Subsystem for Linux with VSCode when following these instructions.  
-Errors I encountered during this project using WSL:
+Problems I encountered during this project using WSL:
 * [The path variable may have errors when downloading and using NPM.](https://www.reddit.com/r/bashonubuntuonwindows/comments/het5vq/npm_not_working_since_ive_updated_to_wsl2/)  
 * [NPM start may not update on page refresh so add CHOKIDAR_USEPOLLING=true.](https://stackoverflow.com/questions/45553302/npm-start-not-refreshing-new-content-on-save-on-one-computer-but-is-on-another) 
+* [Figuring out how to add React materialize to my project.](https://stackoverflow.com/questions/35499842/how-to-use-materialize-css-with-react)
+
 ### Installing NPM
 
 
@@ -36,9 +38,14 @@ npm install --save react-redux @types/react-redux
 ```
 ### Installing React Router
 ```
-npm install --save @types/react-router
+npm install --save react-router @types/react-router
+npm install --save react-router-dom npm install --save @types/react-router-dom
 ```
-
+### Installing React Materialize
+```
+npm install materialize-css@next
+npm install --save react-materialize
+```
 
 ### Displaying our app
 ```
