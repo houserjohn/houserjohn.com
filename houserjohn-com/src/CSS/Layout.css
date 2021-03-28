@@ -1,0 +1,34 @@
+/*
+.topbar {
+    grid-area: header;
+    z-index: 10;
+}
+
+.left {
+    grid-area: left;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header'
+      'left main main main right'
+      'left main main main right'
+      'footer footer footer footer footer';
+    grid-gap: 0px;
+    background-color: #ffffff;
+    padding: 0px;
+  }
+  */

@@ -1,7 +1,9 @@
 
 const Techopedia = () => {
     return (
-        <p> Techopedia </p>
+        <div>
+            <p> Techopedia </p>
+        </div>
     );
 }
 
