@@ -12,6 +12,7 @@ Problems I encountered during this project using WSL:
 * [The path variable may have errors when downloading and using NPM.](https://www.reddit.com/r/bashonubuntuonwindows/comments/het5vq/npm_not_working_since_ive_updated_to_wsl2/)  
 * [NPM start may not update on page refresh so add CHOKIDAR_USEPOLLING=true.](https://stackoverflow.com/questions/45553302/npm-start-not-refreshing-new-content-on-save-on-one-computer-but-is-on-another) 
 * [Figuring out how to add React materialize to my project.](https://stackoverflow.com/questions/35499842/how-to-use-materialize-css-with-react)
+* [Property 'match' does not exist on type 'Readonly<{children?:ReactNode}> & Readonly<MyProps>'](https://stackoverflow.com/questions/50117006/reactjs-ts-property-match-does-not-exist-on-type-readonlychildrenreactno)
 
 ### Installing NPM
 
@@ -35,6 +36,7 @@ cd my-app
 ```
 npm install --save redux @types/redux
 npm install --save react-redux @types/react-redux
+npm install --save-dev redux-devtools-extension
 ```
 ### Installing React Router
 ```

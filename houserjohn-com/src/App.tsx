@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import Techopedia from "./Pages/Techopedia";
 import Topbar from "./Components/Topbar";
 import Botbar from "./Components/Botbar";
+import Path from "./Pages/Path";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Switch>
             <Route path="/techopedia">
               <Techopedia/>
+            </Route>
+            <Route path="/path">
+              <Path/>
             </Route>
             <Route path="/">
               <Home/>

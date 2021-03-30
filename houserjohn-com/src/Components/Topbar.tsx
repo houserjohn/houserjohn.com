@@ -1,4 +1,5 @@
 import 'materialize-css/dist/css/materialize.min.css'
+import '../CSS/Main.css'
 import { Navbar, NavItem, Icon } from 'react-materialize';
 import { NavLink } from "react-router-dom";
 

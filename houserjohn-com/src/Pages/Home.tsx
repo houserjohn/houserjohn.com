@@ -62,7 +62,7 @@ const Home = () => {
                         >
                             <Card
                             actions={[
-                                <a key="1" href="#">This is a link</a>
+                                <a key="1" href="/path">This is a link</a>
                             ]}
                             closeIcon={<Icon>close</Icon>}
                             header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" />}
@@ -73,7 +73,7 @@ const Home = () => {
                             </Card>
                             <Card
                             actions={[
-                                <a key="1" href="#">This is a link</a>
+                                <a key="1" href="/">This is a link</a>
                             ]}
                             closeIcon={<Icon>close</Icon>}
                             header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" />}
@@ -84,7 +84,7 @@ const Home = () => {
                             </Card>
                             <Card
                             actions={[
-                                <a key="1" href="#">This is a link</a>
+                                <a key="1" href="/">This is a link</a>
                             ]}
                             closeIcon={<Icon>close</Icon>}
                             header={<CardTitle image="https://materializecss.com/images/sample-1.jpg" />}
