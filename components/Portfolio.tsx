@@ -32,10 +32,10 @@ let wave_shape_fill_style_2: any = {
 function Portfolio() {
     return (
         <div>
-            <Hotbar/>
             <div className="h-screen">
+                <Hotbar/>
                 <div className="mt-20 mb-20">
-                    <div className="shadow-lg bg-gray-100 w-4/12 rounded-xl m-auto p-5 sm:flex space-x-2">
+                    <div className="shadow-lg border bg-gray-100 w-4/12 rounded-xl m-auto p-5 sm:flex space-x-2">
                         <img alt="Headshot" className="bg-gray-200 w-40 h-40 rounded-full"/>
                         <div className="flex-1">
                             <div className="text-3xl mb-2">John Houser</div>
@@ -45,7 +45,7 @@ function Portfolio() {
                         </div>
                     </div>
                     <div className="text-center">
-                        <button className="p-3 justify-center hover:shadow-xl rounded-xl inline-block mt-6 text-center text-white text-sm bg-green-400 hover:bg-green-600 font-medium">
+                        <button className="p-3 border justify-center rounded-xl inline-block mt-6 text-center text-white text-sm bg-green-400 hover:bg-green-600 font-medium">
                             Resume
                         </button>
                     </div>
@@ -59,12 +59,12 @@ function Portfolio() {
                 </div>
             </div>
             <div className="bg-gray-100 py-10">
-                <div className="w-10/12 m-auto">
+                <div className="w-8/12 m-auto">
                     <Divider/>
-                    <div className="text-4xl font-medium">Projects</div>
+                    <div className="text-4xl font-medium" id="projects">Projects</div>
                     <ProjectManager/>
                     <Divider/>
-                    <div className="text-4xl font-medium mt-3">Skill Set</div>
+                    <div className="text-4xl font-medium mt-3" id="skill-set">Skill Set</div>
                     <SkillManager/>
                 </div>
             </div>
@@ -75,15 +75,15 @@ function Portfolio() {
                     </svg>
                 </div>
             </div>
-            <div className="w-10/12 m-auto pb-20">
+            <div className="w-8/12 m-auto pb-20">
                 <div className="w-20 h-3 mt-40 bg-gray-500 text-opacity-0 text-black rounded-full bg-gradient-to-r from-green-400 to-blue-500">a</div>
-                <div className="text-4xl font-medium mt-2">Contact</div>
-                <div className="grid grid-cols-2 mt-5">
-                    <div>
+                <div className="text-4xl font-medium mt-2" id="contact">Contact</div>
+                <div className="flex flex-wrap mt-5 gap-6">
+                    <div className="inline-block w-80">
                         <div className="text-gray-500 font-medium text-sm">Email</div>
                         <div>john (at) houserjohn (dot) com</div>
                     </div>
-                    <div>
+                    <div className="inline-block w-80">
                         <div className="text-gray-500 font-medium text-sm">Cell</div>
                         <div>208-412-5439</div>
                     </div>

@@ -2,7 +2,7 @@ import Tag from './Tag';
 
 function SkillCard() {
     return (
-        <div className="bg-white shadow-lg px-4 py-4 h-64 justify-center text-center rounded-xl">
+        <div className="bg-white border shadow-lg px-4 py-4 w-64 h-64 justify-center text-center rounded-xl">
             <div className="font-medium">
                 Front End
             </div>

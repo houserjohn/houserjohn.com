@@ -10,9 +10,9 @@ let skill_info = [
 
 function SkillManager() {
     return (
-        <div className="grid grid-cols-3 gap-3 my-5">
+        <div className="flex flex-wrap gap-3 justify-center my-5">
             {skill_info.map((value: any, index: number) => (
-                <SkillCard/>            
+                <SkillCard key={index}/>            
             ))}
         </div>
     );
