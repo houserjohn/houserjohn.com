@@ -7,7 +7,7 @@ function Hotbar() {
             <div className="sm:w-6/12 sm:flex py-2 m-auto">
                 <div className="sm:flex w-1/2">
                     <Link href="/">
-                        <div className="p-1 font-medium cursor-pointer">Portfolio</div>
+                        <div className="p-1 font-medium text-gray-400 cursor-pointer hover:text-black">Portfolio</div>
                     </Link>
                 </div>
                 
