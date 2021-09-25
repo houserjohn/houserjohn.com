@@ -99,7 +99,7 @@ interface child_interface {
 }
 
 const Headings = ({ headings, activeId } : { headings: any, activeId: string|undefined}) => (
-  <ul className="flex flex-col invisible md:visible">
+  <ul className="flex flex-col ">
     {headings.map((heading: heading_interface) => (
       <li className="" key={heading.id}>
         <div className="inline-block w-auto rounded-full">
@@ -153,7 +153,7 @@ const TableOfContents = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav className="fixed text-center h-screen w-2/12 z-50" aria-label="Table of contents">
+    <nav className="fixed text-center h-screen w-2/12 z-10 hidden sm:block" aria-label="Table of contents">
       <div className="h-1/3"></div>
       <Headings headings={nestedHeadings} activeId={activeId} />
     </nav>

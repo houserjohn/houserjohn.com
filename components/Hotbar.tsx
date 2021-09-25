@@ -1,13 +1,11 @@
 import Link from 'next/link';
-import { AiFillGithub, AiFillLinkedin, AiOutlineMenu } from 'react-icons/ai';
-
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function Hotbar() {
     return (
-        <div className="absolute w-full bg-white sm:top-0 z-50">
+        <div className="hidden sm:block absolute w-full bg-white sm:top-0 z-20">
             <div className="sm:w-6/12 sm:flex py-2 m-auto">
                 <div className="sm:flex w-1/2">
-                    <AiOutlineMenu size="2rem" className="my-auto text-gray-400 mt-5 mx-2 hover:text-black cursor-pointer sm:hidden"/>
                     <Link href="/">
                         <div className="p-1 font-medium text-gray-400 cursor-pointer hover:text-black">Portfolio</div>
                     </Link>

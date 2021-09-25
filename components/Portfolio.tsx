@@ -7,14 +7,16 @@ import Wave from './Wave';
 import Header from './Header';
 import Contact from './Contact';
 import TableOfContents from './TableOfContents';
+import Waffle from './Waffle';
 
 function Portfolio() {
     return (
         <div>
             <TableOfContents/>
             <Hotbar/>
-            <div className="h-screen ">
-                <div className="h-2/6 -mt-4"></div>
+            <Waffle/>
+            <div className="h-screen mb-4 ">
+                <div className="h-1/6 sm:h-2/6 -mt-4"></div>
                 <AboutMeCard/>
                 <div className="text-center">
                     <Button/>
@@ -30,7 +32,7 @@ function Portfolio() {
                 </div>
             </div>
             <Wave inverted={true}/> 
-            <div className="w-8/12 m-auto pb-20 pt-10">
+            <div className="w-8/12 m-auto pb-20 pt-20">
                 <Header id="contact">Contact</Header>
                 <Contact/>
             </div>

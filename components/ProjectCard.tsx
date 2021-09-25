@@ -18,9 +18,9 @@ interface project_card_interface {
 function ProjectCard(props: project_card_interface) {
     return (
         <div>
-            <div className="bg-white w-96 rounded-xl shadow-lg">
+            <div className="bg-white max-w-sm rounded-xl shadow-lg">
                 <div className="">
-                    <div className="block bg-gray-200 rounded-t-xl w-96">
+                    <div className="block bg-gray-200 rounded-t-xl max-w-sm">
                         <Image src={props.img_src} width="400" height="200" layout="responsive" alt={props.img_alt} className="rounded-t-xl"/>
                     </div>
                     <div className="border rounded-b-xl px-4">
