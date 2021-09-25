@@ -9,7 +9,7 @@ function Hotbar() {
                     <Link href="/">
                         <div className="p-1 font-medium text-gray-400 cursor-pointer hover:text-black">Portfolio</div>
                     </Link>
-                    <h2 id="Home" className="opacity-0 w-1 cursor-default">Home</h2>
+                    <h2 id="home" className="opacity-0 w-1 cursor-default -mt-5">Home</h2>
                 </div>
                 
                 <div className="sm:flex w-1/2 place-content-end space-x-4">

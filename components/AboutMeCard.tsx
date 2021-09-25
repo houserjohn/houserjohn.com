@@ -9,9 +9,10 @@ function AboutMeCard() {
             </div>
             <div className="flex-1">
                 <div className="text-3xl mb-2 font-medium">John Houser</div>
-                <div className="text-sm text-gray-800 mb-1">3rd year CS student @ UCLA. </div>
-                <div className="text-sm text-gray-800 mb-1"> Passionate about computer science.</div>
-                <div className="text-sm text-gray-800"> Building useful tools with software.</div>
+                <div className="text-sm text-gray-600 mb-1 whitespace-pre-line">3rd year CS student @ UCLA.
+                    Passionate about computer science.
+                    Building useful tools with software.
+                </div>
             </div>
         </div>
     );

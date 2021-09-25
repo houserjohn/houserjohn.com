@@ -51,18 +51,8 @@ interface heading_interface {
     items: any[],
     reduce: any,
 }
-/*
-const Headings = (): any => {
-    const { nestedHeadings } = useHeadingsData(); 
-    return (
-            {nestedHeadings.map((heading: heading_interface) => (
-                <a key={heading.id} href={`#${heading.id}`}>{heading.title}</a>
-            ))}
-    );
-}
-*/
 
-const useIntersectionObserver = (setActiveId) => {
+const useIntersectionObserver = (setActiveId : any) => {
   const headingElementsRef: any = useRef({});
 
   useEffect(() => {
@@ -92,7 +82,7 @@ const useIntersectionObserver = (setActiveId) => {
     };
 
     const observer: any = new IntersectionObserver(callback, {
-      rootMargin: "0px 0px -40% 0px"
+      rootMargin: "0px 0px -20% 0px"
     });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
@@ -108,10 +98,10 @@ interface child_interface {
     title: string,
 }
 
-const Headings = ({ headings, activeId } : { headings: any, activeId: string}) => (
+const Headings = ({ headings, activeId } : { headings: any, activeId: string|undefined}) => (
   <ul>
     {headings.map((heading: heading_interface) => (
-      <li key={heading.id} className={heading.id === activeId ? "bg-red-100" : ""}>
+      <li key={heading.id}>
         <a
           href={`#${heading.id}`}
           onClick={(e: any) => {
@@ -124,7 +114,7 @@ const Headings = ({ headings, activeId } : { headings: any, activeId: string}) =
             }
           }}
         >
-          {heading.title}
+          <IndexOfContent active={heading.id === activeId ? true : false}>{heading.title}</IndexOfContent>
         </a>
         {heading.items.length > 0 && (
           <ul>
@@ -177,7 +167,8 @@ const TableOfContents = () => {
   useIntersectionObserver(setActiveId);
 
   return (
-    <nav className="fixed z-50" aria-label="Table of contents">
+    <nav className="fixed text-center h-screen w-2/12 z-50" aria-label="Table of contents">
+      <div className="h-1/3"></div>
       <Headings headings={nestedHeadings} activeId={activeId} />
     </nav>
   );
