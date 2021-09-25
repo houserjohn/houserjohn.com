@@ -10,7 +10,7 @@ function Header(props: Header_Props) {
     return (
         <div>
         <Divider/>
-        <h2 className="text-4xl font-medium" id={props.id}>{props.children}</h2>
+        <h2 className="text-4xl font-medium mb-4" id={props.id}>{props.children}</h2>
         </div>
     );
 }

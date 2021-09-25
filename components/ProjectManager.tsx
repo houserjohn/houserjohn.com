@@ -3,13 +3,14 @@ import ProjectCard from './ProjectCard';
 let project_info = [
     {
         title: "Sorting Visualizer", 
-        img_src: "/sorting_visualizer.png",
+        img_src: "/sorting_visualizer_2_1.png",
         img_alt: "Sorting visualizer",
         tags: [
             {name: "React", bg: ""},
             {name: "Redux", bg: "bg-gradient-to-r from-green-400 to-green-500 "},
             {name: "Typescript", bg: "bg-gradient-to-r from-red-400 to-red-500 "},
             {name: "Styled Components", bg: "bg-gradient-to-r from-pink-400 to-pink-500 "},
+            {name: "React Icons", bg: "bg-gradient-to-r from-yellow-400 to-yellow-500 "},
 
         ],
         description: `Visualize the algorithms behind well known sorting algorithms such as 
@@ -21,7 +22,7 @@ let project_info = [
     },
     {
         title: "This Portfolio", 
-        img_src: "/portfolio.png",
+        img_src: "/portfolio_2_1.png",
         img_alt: "Portfolio",
         tags: [
             {name: "Next.js", bg: "bg-gradient-to-r from-indigo-400 to-indigo-500 "},
@@ -40,7 +41,7 @@ let project_info = [
 
 function ProjectManager() {
     return (
-        <div className="flex gap-3 justify-center flex-wrap p-1 my-4  space-y-0">
+        <div className="flex gap-3 justify-center flex-wrap space-y-0">
             {project_info.map((project: any, index: number) => (
                 <ProjectCard key={index} title={project.title} tags={project.tags}
                  img_src={project.img_src} src_link={project.src_link} 

@@ -10,14 +10,18 @@ interface project_card_interface {
     src_link: string,
     demo_link: string,
 }
-
+                    /*
+                    <div className="relative bg-gray-200 rounded-t-xl w-96 h-40 ">
+                        <Image src={props.img_src} layout="fill" alt={props.img_alt} className="rounded-t-xl"/>
+                    </div>
+                    */
 function ProjectCard(props: project_card_interface) {
     return (
         <div>
             <div className="bg-white w-96 rounded-xl shadow-lg">
                 <div className="">
-                    <div className="relative bg-gray-200 rounded-t-xl w-96 h-40 ">
-                        <Image src={props.img_src} layout="fill" alt={props.img_alt} className="rounded-t-xl"/>
+                    <div className="block bg-gray-200 rounded-t-xl w-96">
+                        <Image src={props.img_src} width="400" height="200" layout="responsive" alt={props.img_alt} className="rounded-t-xl"/>
                     </div>
                     <div className="border rounded-b-xl px-4">
                         <div className="text-md pt-2 font-medium w-auto pr-2">{props.title}</div>

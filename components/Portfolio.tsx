@@ -8,25 +8,21 @@ import Header from './Header';
 import Contact from './Contact';
 import TableOfContents from './TableOfContents';
 
-
-// Todo: change all img tags to next.js images 
-
 function Portfolio() {
     return (
         <div>
             <TableOfContents/>
-            <div className="h-screen">
-                <Hotbar/>
-                <div className="mt-20">
-                    <AboutMeCard/>
-                    <div className="text-center">
-                        <Button/>
-                    </div>
-                </div> 
+            <Hotbar/>
+            <div className="h-screen ">
+                <div className="h-2/6 -mt-4"></div>
+                <AboutMeCard/>
+                <div className="text-center">
+                    <Button/>
+                </div>
             </div>
             <Wave inverted={false}/>
-            <div className="bg-gray-100 py-10">
-                <div className="w-8/12 m-auto">
+            <div className="w-full bg-gray-100 py-10">
+                <div className="w-11/12 sm:w-8/12 m-auto">
                     <Header id="projects">Projects</Header>
                     <ProjectManager/>
                     <Header id="skill-set">Skill Set</Header>

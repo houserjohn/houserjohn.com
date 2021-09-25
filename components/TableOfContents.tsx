@@ -99,7 +99,7 @@ interface child_interface {
 }
 
 const Headings = ({ headings, activeId } : { headings: any, activeId: string|undefined}) => (
-  <ul className="flex flex-col">
+  <ul className="flex flex-col invisible md:visible">
     {headings.map((heading: heading_interface) => (
       <li className="" key={heading.id}>
         <div className="inline-block w-auto rounded-full">
