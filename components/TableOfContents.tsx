@@ -99,23 +99,26 @@ interface child_interface {
 }
 
 const Headings = ({ headings, activeId } : { headings: any, activeId: string|undefined}) => (
-  <ul>
+  <ul className="flex flex-col">
     {headings.map((heading: heading_interface) => (
-      <li key={heading.id}>
-        <a
-          href={`#${heading.id}`}
-          onClick={(e: any) => {
-            e.preventDefault();
-            const head: (Element | null) = document.querySelector(`#${heading.id}`)
-            if (head) {
-                head.scrollIntoView({
-                    behavior: "smooth"
-                });
+      <li className="" key={heading.id}>
+        <div className="inline-block w-auto rounded-full">
+          <a
+            href={`#${heading.id}`}
+            onClick={(e: any) => {
+              e.preventDefault();
+              const head: (Element | null) = document.querySelector(`#${heading.id}`)
+              if (head) {
+                  head.scrollIntoView({
+                      behavior: "smooth"
+                  });
+              }
             }
-          }}
-        >
-          <IndexOfContent active={heading.id === activeId ? true : false}>{heading.title}</IndexOfContent>
-        </a>
+          }
+          >
+            <IndexOfContent active={heading.id === activeId ? true : false}>{heading.title}</IndexOfContent>
+          </a>
+        </div>
         {heading.items.length > 0 && (
           <ul>
             {heading.items.map((child: any) => (
@@ -142,24 +145,7 @@ const Headings = ({ headings, activeId } : { headings: any, activeId: string|und
     ))}
   </ul>
 );
-/*
-                <IndexOfContent>Home</IndexOfContent>
-                <IndexOfContent>Projects</IndexOfContent>
-                <IndexOfContent>Skill Set</IndexOfContent>
-                <IndexOfContent>Contact</IndexOfContent>
-*/
-/*
-function TableOfContents() {
-    return (
-        <div className="fixed text-center h-screen z-50 w-2/12">
-            <div className="h-1/3"></div>
-            <div className="flex-col h-1/3">
-                <Headings/>
-            </div>
-        </div>
-    );
-}
-*/
+
 
 const TableOfContents = () => {
   const [activeId, setActiveId] = useState();
