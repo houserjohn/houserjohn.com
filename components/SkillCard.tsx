@@ -1,6 +1,9 @@
 import Tag from './Tag';
 import Image from 'next/image'
 
+const externaImageLoader = ({ src }: { src: string }) =>
+  `https://houserjohn.com/${src}`;
+
 interface SkillCard_Props {
     description: string,
     title: string,
@@ -21,7 +24,7 @@ function SkillCard(props: SkillCard_Props) {
                     {props.title}
                 </div>
                 <div className="block w-32 h-32 bg-gray-100 m-auto rounded-full border shadow ">
-                    <Image src={props.img_src} width="400" height="400" layout="responsive" alt={props.img_alt} className="rounded-full"/>
+                    <Image src={props.img_src} loader={externaImageLoader} width="400" height="400" layout="responsive" alt={props.img_alt} className="rounded-full"/>
                 </div>
                 <div className="text-gray-500">
                     {props.description}

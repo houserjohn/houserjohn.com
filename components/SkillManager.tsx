@@ -5,7 +5,7 @@ let skill_info = [
     {
         title: "Front End",
         description: "",
-        img_src: "https://houserjohn.com/frontend_1_1.png",
+        img_src: "frontend_1_1.png",
         img_alt: "front end image",
         tags: [
             {name: "React", bg: ""},
@@ -18,7 +18,7 @@ let skill_info = [
     {
         title: "Back End",
         description: "",
-        img_src: "https://houserjohn.com/backend_1_1.png",
+        img_src: "backend_1_1.png",
         img_alt: "back end image",
         tags: [
             {name: "Next.js", bg: "bg-gradient-to-r from-indigo-400 to-indigo-500 "},
@@ -31,7 +31,7 @@ let skill_info = [
     {
         title: "Misc",
         description: "",
-        img_src: "https://houserjohn.com/misc_1_1.png",
+        img_src: "misc_1_1.png",
         img_alt: "misc image",
         tags: [
             {name: "Python", bg: "bg-gradient-to-r from-blue-400 to-blue-500 "},
