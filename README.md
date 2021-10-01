@@ -24,3 +24,4 @@ sudo apt install npm
 
 ### Deployment with Firebase 
 https://www.youtube.com/watch?v=IDHfvpsYShs&t=7s&ab_channel=AndyWang
+https://dev.to/rowaxl/what-i-struggled-with-next-js-using-firebase-hosting-and-enable-ssr-4e67

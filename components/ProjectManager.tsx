@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 let project_info = [
     {
         title: "Sorting Visualizer", 
-        img_src: "/sorting_visualizer_2_1.png",
+        img_src: "https://houserjohn.com/sorting_visualizer_2_1.png",
         img_alt: "Sorting visualizer",
         tags: [
             {name: "React", bg: ""},
@@ -21,7 +21,7 @@ let project_info = [
     },
     {
         title: "This Portfolio", 
-        img_src: "/portfolio_2_1.png",
+        img_src: "https://houserjohn.com/portfolio_2_1.png",
         img_alt: "Portfolio",
         tags: [
             {name: "Next.js", bg: "bg-gradient-to-r from-indigo-400 to-indigo-500 "},
@@ -38,7 +38,7 @@ let project_info = [
     },
     {
         title: "Recreationists",
-        img_src: "/recreationists_2_1.png",
+        img_src: "https://houserjohn.com/recreationists_2_1.png",
         img_alt: "Virtual UCLA",
         tags: [
             {name: "JS", bg: "bg-gradient-to-r from-red-400 to-red-500 " },
