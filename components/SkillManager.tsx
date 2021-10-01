@@ -23,6 +23,8 @@ let skill_info = [
         tags: [
             {name: "Next.js", bg: "bg-gradient-to-r from-indigo-400 to-indigo-500 "},
             {name: "Node.js", bg: "bg-gradient-to-r from-yellow-400 to-yellow-500 "},
+            {name: "Express", bg: "bg-gradient-to-r from-purple-400 to-purple-500 "},
+            {name: "Socket.io", bg: "bg-gradient-to-r from-green-400 to-green-500 "},
             {name: "Postgres/SQL", bg: "bg-gradient-to-r from-gray-400 to-gray-500 "},
         ]
     },
