@@ -1,7 +1,7 @@
 # Code for houserjohn.com
 
 ## Technologies used
-Next.js, TypeScript, Tailwind CSS
+React, Next.js, TypeScript, Tailwind CSS
 
 ## Hosting used
 Firebase
