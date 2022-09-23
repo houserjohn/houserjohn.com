@@ -1,9 +1,10 @@
 import Tag from './Tag';
 import Image from 'next/image'
 
+/*
 const externaImageLoader = ({ src }: { src: string }) =>
   `https://houserjohn.com/${src}`;
-
+*/
 interface project_card_interface {
     title: string,
     img_src: string,
@@ -18,13 +19,15 @@ interface project_card_interface {
                         <Image src={props.img_src} layout="fill" alt={props.img_alt} className="rounded-t-xl"/>
                     </div>
                     */
+
+                    // loader={externaImageLoader} // get rid of the / too
 function ProjectCard(props: project_card_interface) {
     return (
         <div>
             <div className="bg-white max-w-sm rounded-xl shadow-lg">
                 <div className="">
                     <div className="block bg-gray-200 rounded-t-xl max-w-sm">
-                        <Image src={props.img_src} width="400" height="200" loader={externaImageLoader} layout="responsive" alt={props.img_alt} className="rounded-t-xl"/>
+                        <Image src={`/${props.img_src}`} width="400" height="200" layout="responsive" alt={props.img_alt} className="rounded-t-xl"/>
                     </div>
                     <div className="border rounded-b-xl px-4">
                         <div className="text-md pt-2 font-medium w-auto pr-2">{props.title}</div>
